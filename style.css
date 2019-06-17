@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700&display=swap');
+/*
+font-family: 'Lato', sans-serif;
+*/
+
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Lato', sans-serif;
+}
+
+html, body {
+  color: white;
+  background: #111;
+}
+
+.orage-border {
+  border-bottom: 2px solid orangered;
+}
+
+nav {
+  height: 64px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  position: fixed;
+  float: left;
+  background: #111;
+  margin-bottom: 50px;
+  z-index: 1000;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-right: 30px;
+  font-size: 1.2rem;
+}
+
+section {
+  height: 100vh;
+}
+
+#welcome-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  margin: 0px;
+  width: 100%;
+  background: #111;
+  /*
+  background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.7), rgba(255, 81, 0, 0.6)), url(https://media.giphy.com/media/xWMPYx55WNhX136T0V/source.gif);
+  background-size: cover;
+  background-position: center;
+  */
+}
+
+.grande {
+  font-size: 4.5rem;
+  color: white;
+}
+
+.pequeno {
+  font-size: 2rem;
+  color: orangered;
+}
+
+.anchor{
+  display: block;
+  height: 64px; /*same height as header*/
+  margin-top: -64px; /*same height as header*/
+  visibility: hidden;
+}
+
+.h1-header {
+  color: white;
+  font-size: 2rem;
+  text-align: center;
+  margin: 10px 0;
+}
+
+#projects-container {
+  width: 100%;
+  height: calc(100vh - 2rem - 20px);
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: space-evenly;
+}
+
+#projects-container .project-tile {
+  width: 300px;
+  height: 300px;
+  margin: 0 15px;;
+  position: relative;
+  text-align: center;
+  border: 3px solid orangered;
+  transition: all .2s ease-in-out;
+}
+
+#projects-container .project-tile img {
+  object-fit: cover;
+  width: 300px;
+  height: 300px; 
+  position: relative;
+  display: block;
+  transition: all .2s ease-in-out;
+}
+
+.texto {
+  font-size: 1.5rem;
+  top: 0; 
+  left: 0; 
+  position: absolute;
+  width: 100%;
+  color: white;
+  opacity: 0;
+  margin: calc(50% - 1.5rem) 0;
+  transition: opacity .2s ease-in-out;
+}
+
+#projects-container .project-tile:hover img  {
+  filter: blur(3px) brightness(.3);
+}
+
+#projects-container .project-tile:hover h2  {
+  opacity: 1;
+}
+
+#contact {
+  height: calc(100vh - 75px);
+}
+
+#contact form {
+  height: 50%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 200px 300px;
+  grid-template-rows: 25px 25px 80px 35px;
+  grid-gap: 20px;
+  justify-content: center;
+  align-content: center;	
+}
+
+.label {
+  justify-self: end;
+  height: 25px;
+
+}
+
+.input {
+  justify-self: start;
+  width: 300px;
+  height: 25px;
+  font-size: 1.2rem;
+  background: #222;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  color: white;
+  outline: none;
+  padding: 0 2px 0 5px;
+  transition: border .2s ease-out;
+}
+
+.input:focus {
+  border:1px solid orangered;
+  box-shadow: 0 0 5px orangered;
+}
+
+.textarea {
+  width: 302px;
+  height: 80px;
+  resize: none;
+}
+
+.button {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  color: white;
+  justify-self: center;
+  border: none;
+  background: #DD4500;
+  width: 80px;
+  height: 35px;
+  cursor: pointer;
+  outline: none;
+}
+
+.sites {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.sites-img {
+  width: 80px;
+  height: 80px;
+  filter: grayscale(100%);
+  transition: filter .3s ease-in-out;
+}
+
+.sites-img:hover { 
+  filter: grayscale(0%);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1030px) {
+  
+  #projects-container {
+    justify-content: space-around;
+    align-content: center;
+  }
+
+  #projects-container .project-tile {
+    width: 250px;
+    height: 250px;
+    margin: 15px;
+  }
+
+  #projects-container .project-tile img {
+    width: 250px;
+    height: 250px; 
+  }
+
+  .texto {
+    font-size: 1.3rem;
+  }
+
+}
+
+@media screen and (max-width: 880px) {
+  #projects-container .project-tile {
+    width: 200px;
+    height: 200px;
+  }
+
+  #projects-container .project-tile img {
+    width: 200px;
+    height: 200px; 
+  }
+}
+
+@media screen and (max-width: 560px) {
+  html {
+    font-size: 12px;
+  }
+  
+  #projects-container .project-tile {
+    width: 150px;
+    height: 150px;
+    margin: 0px;
+  }
+
+  #projects-container .project-tile img {
+    width: 150px;
+    height: 150px; 
+  }
+
+  #contact form {
+    grid-template-columns: 45% 45%;
+    grid-gap: 10px;
+  }
+
+  .input {
+    width: 90%;
+  }
+
+  .textarea {
+    width: 90%;
+  }
+}
