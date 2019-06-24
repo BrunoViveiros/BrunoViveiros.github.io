@@ -12,37 +12,89 @@ font-family: 'Lato', sans-serif;
 html, body {
   color: white;
   background: #111;
-}
-
-.orage-border {
-  border-bottom: 2px solid orangered;
-}
-
-nav {
-  height: 64px;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  align-items: center;
-  width: 100%;
-  position: fixed;
-  float: left;
-  background: #111;
-  margin-bottom: 50px;
-  z-index: 1000;
-}
-
-nav a {
-  color: white;
-  text-decoration: none;
-  margin-right: 30px;
-  font-size: 1.2rem;
+  overflow-x: hidden;
 }
 
 section {
   height: 100vh;
 }
 
+.orage-border {
+  border-bottom: 2px solid orangered;
+}
+
+
+/*-----------------------------------------------/
+/---------------------NAVBAR---------------------/
+/-----------------------------------------------*/
+/*
+Fazer
+-Aparecer apenas após seção welcome
+-Cada icone com uma cor diferente
+-Cor ficar em grayscale e 'acender' quando estiver na seção indicada
+*/
+
+#navbar a {
+  position: fixed;
+  text-decoration: none;
+  color: white;
+  right: -70px;
+  z-index: 99;
+  height: 36px;
+  display: grid;
+  grid-template-columns: 40px 100px;
+  transition: all .6s ease-in-out;
+}
+
+#navbar a i {
+  display: block;
+  font-size: 36px;
+  height: 36px;
+}
+
+.fa-home, .fa-list-alt, .fa-address-card {
+  color: lightblue;  /* Cor base -- fazer cada icone com uma cor diferente */
+}
+
+#navbar span {
+  text-align: left;
+  line-height: 36px;
+  margin-left: 50px;
+  transition: all .6s ease-in-out;
+}
+
+/*++++Posicionamento no meio da tela++++*/
+#teste1 {
+  top: calc(50% - 60px);
+}
+
+#teste2 {
+  top: 50%;
+}
+
+#teste3 {
+  top: calc(50% + 60px);
+}
+/*----Posicionamento no meio da tela----*/
+
+/*++++Efeito de minimizar texto++++*/
+#teste1:hover {
+  transform: translate(-40%);
+}
+
+#teste2:hover, #teste3:hover {
+  transform: translate(-50%);
+}
+
+#teste1:hover span, #teste2:hover span, #teste3:hover span {
+  margin-left: 10px;
+}
+/*----Efeito de minimizar texto----*/
+
+
+/*----------------------------------------------/
+/----------------Welcome Section----------------/
+/----------------------------------------------*/
 #welcome-section {
   display: flex;
   flex-direction: column;
