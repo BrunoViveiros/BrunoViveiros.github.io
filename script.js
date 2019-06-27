@@ -15,5 +15,16 @@ window.onscroll = function () {
     	document.getElementById('nav-home').children[0].style.color = '';
     	document.getElementById('nav-projects').children[0].style.color = '';
     	document.getElementById('nav-contact').children[0].style.color = '#9B1B30';
-    }
+	}
+	
+	if ( scroll < anch1 ) {
+		document.getElementById('navbar').children[0].style.right = '-200px'
+		document.getElementById('navbar').children[1].style.right = '-200px'
+		document.getElementById('navbar').children[2].style.right = '-200px'
+	} else {
+		document.getElementById('navbar').children[0].style.right = '-70px'
+		document.getElementById('navbar').children[1].style.right = '-70px'
+		document.getElementById('navbar').children[2].style.right = '-70px'
+	}
+
 };
