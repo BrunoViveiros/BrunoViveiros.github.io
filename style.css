@@ -27,13 +27,6 @@ section {
 /*-----------------------------------------------/
 /---------------------NAVBAR---------------------/
 /-----------------------------------------------*/
-/*
-Fazer
--Aparecer apenas após seção welcome
--Cada icone com uma cor diferente
--Cor ficar em grayscale e 'acender' quando estiver na seção indicada
-*/
-
 #navbar a {
   position: fixed;
   text-decoration: none;
