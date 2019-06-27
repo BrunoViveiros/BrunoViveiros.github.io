@@ -54,8 +54,19 @@ section {
   font-weight: bold;
   transition: all .6s ease-in-out;
 }
+/*++++Cor base dos icones++++*/
+#nav-home:hover i {
+  color: #FF851B;
+}
+#nav-projects:hover i{
+  color: #0074D9;
+}
+#nav-contact:hover i{
+  color: #01FF70;
+}
+/*----Cor base dos icones----*/
 
-/*++++Posicionamento no meio da tela++++*/
+/*++++Posicionamento icones no meio da tela++++*/
 #nav-home {
   top: calc(50% - 60px);
 }
@@ -67,7 +78,7 @@ section {
 #nav-contact {
   top: calc(50% + 60px);
 }
-/*----Posicionamento no meio da tela----*/
+/*----Posicionamento icones no meio da tela----*/
 
 /*++++Efeito de minimizar texto++++*/
 #nav-home:hover {
@@ -83,15 +94,7 @@ section {
 }
 /*----Efeito de minimizar texto----*/
 
-#nav-home:hover i {
-  color: #FF851B;
-}
-#nav-projects:hover i{
-  color: #0074D9;
-}
-#nav-contact:hover i{
-  color: #01FF70;
-}
+
 
 /*----------------------------------------------/
 /----------------Welcome Section----------------/
