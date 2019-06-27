@@ -50,47 +50,55 @@ Fazer
   display: block;
   font-size: 36px;
   height: 36px;
-}
-
-.fa-home, .fa-list-alt, .fa-address-card {
-  color: lightblue;  /* Cor base -- fazer cada icone com uma cor diferente */
+  color: #555;
+  transition: color .6s ease-in-out;
 }
 
 #navbar span {
   text-align: left;
   line-height: 36px;
   margin-left: 50px;
+  font-weight: bold;
   transition: all .6s ease-in-out;
 }
 
 /*++++Posicionamento no meio da tela++++*/
-#teste1 {
+#nav-home {
   top: calc(50% - 60px);
 }
 
-#teste2 {
+#nav-projects {
   top: 50%;
 }
 
-#teste3 {
+#nav-contact {
   top: calc(50% + 60px);
 }
 /*----Posicionamento no meio da tela----*/
 
 /*++++Efeito de minimizar texto++++*/
-#teste1:hover {
+#nav-home:hover {
   transform: translate(-40%);
 }
 
-#teste2:hover, #teste3:hover {
+#nav-projects:hover, #nav-contact:hover {
   transform: translate(-50%);
 }
 
-#teste1:hover span, #teste2:hover span, #teste3:hover span {
+#nav-home:hover span, #nav-projects:hover span, #nav-contact:hover span {
   margin-left: 10px;
 }
 /*----Efeito de minimizar texto----*/
 
+#nav-home:hover i {
+  color: #E08119;
+}
+#nav-projects:hover i{
+  color: #00539C;
+}
+#nav-contact:hover i{
+  color: #9B1B30;
+}
 
 /*----------------------------------------------/
 /----------------Welcome Section----------------/
