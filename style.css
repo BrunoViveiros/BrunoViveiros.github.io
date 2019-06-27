@@ -84,13 +84,13 @@ section {
 /*----Efeito de minimizar texto----*/
 
 #nav-home:hover i {
-  color: #E08119;
+  color: #FF851B;
 }
 #nav-projects:hover i{
-  color: #00539C;
+  color: #0074D9;
 }
 #nav-contact:hover i{
-  color: #9B1B30;
+  color: #01FF70;
 }
 
 /*----------------------------------------------/
