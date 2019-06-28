@@ -15,29 +15,23 @@ window.onscroll = function () {
 	}
 
 	//Muda cor do icone se estiver na section correspondente
+	let navColor1 = document.getElementById('nav-home').children[0];
+	let navColor2 = document.getElementById('nav-skills').children[0];
+	let navColor3 = document.getElementById('nav-projects').children[0];
+	let navColor4 = document.getElementById('nav-contact').children[0];
+	
 	if ( scroll <= anch1 ) {
-		document.getElementById('nav-home').children[0].style.color = '#FF851B';
-    	document.getElementById('nav-skills').children[0].style.color = '';
-    	document.getElementById('nav-projects').children[0].style.color = '';
-		document.getElementById('nav-contact').children[0].style.color = '';
+		navColor1.style.color = '#FF851B';
+		navColor2.style.color = navColor3.style.color = navColor4.style.color = '';
     } else if ( scroll >= anch1 && scroll <= anch2 ) {
-    	document.getElementById('nav-home').children[0].style.color = '';
-    	document.getElementById('nav-skills').children[0].style.color = '#6B5B95';
-    	document.getElementById('nav-projects').children[0].style.color = '';
-    	document.getElementById('nav-contact').children[0].style.color = '';
+		navColor2.style.color = '#6B5B95';
+		navColor1.style.color = navColor3.style.color = navColor4.style.color = '';
     } else if ( scroll >= anch2 && scroll <= anch3 ) {
-    	document.getElementById('nav-home').children[0].style.color = '';
-    	document.getElementById('nav-skills').children[0].style.color = '';
-    	document.getElementById('nav-projects').children[0].style.color = '#0074D9';
-    	document.getElementById('nav-contact').children[0].style.color = '';
+
+		navColor3.style.color = '#0074D9';
+		navColor1.style.color = navColor2.style.color = navColor4.style.color = '';
 	} else {
-    	document.getElementById('nav-home').children[0].style.color = '';
-    	document.getElementById('nav-skills').children[0].style.color = '';
-    	document.getElementById('nav-projects').children[0].style.color = '';
-    	document.getElementById('nav-contact').children[0].style.color = '#01FF70';
+		navColor4.style.color = '#01FF70';
+		navColor1.style.color = navColor2.style.color = navColor3.style.color = '';
 	}
-	
-	
-
-
 };
