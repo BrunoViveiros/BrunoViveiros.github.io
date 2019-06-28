@@ -47,6 +47,10 @@ section {
   transition: color .6s ease-in-out;
 }
 
+#navbar #nav-projects i {
+  font-size: 33px;
+}
+
 #navbar span {
   text-align: left;
   line-height: 36px;
@@ -58,9 +62,15 @@ section {
 #nav-home:hover i {
   color: #FF851B;
 }
+
+#nav-skills:hover i {
+  color: #6B5B95;
+}
+
 #nav-projects:hover i{
   color: #0074D9;
 }
+
 #nav-contact:hover i{
   color: #01FF70;
 }
@@ -68,20 +78,24 @@ section {
 
 /*++++Posicionamento icones no meio da tela++++*/
 #nav-home {
-  top: calc(50% - 60px);
+  top: calc(50% - 90px);
+}
+
+#nav-skills {
+  top: calc(50% - 30px);
 }
 
 #nav-projects {
-  top: 50%;
+  top: calc(50% + 30px);
 }
 
 #nav-contact {
-  top: calc(50% + 60px);
+  top: calc(50% + 90px);
 }
 /*----Posicionamento icones no meio da tela----*/
 
 /*++++Efeito de minimizar texto++++*/
-#nav-home:hover {
+#nav-home:hover, #nav-skills:hover {
   transform: translate(-40%);
 }
 
@@ -89,7 +103,7 @@ section {
   transform: translate(-50%);
 }
 
-#nav-home:hover span, #nav-projects:hover span, #nav-contact:hover span {
+#nav-home:hover span, #nav-projects:hover span, #nav-contact:hover span, #nav-skills:hover span {
   margin-left: 10px;
 }
 /*----Efeito de minimizar texto----*/
