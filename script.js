@@ -23,11 +23,10 @@ window.onscroll = function () {
 	if ( scroll <= anch1 ) {
 		navColor1.style.color = '#FF851B';
 		navColor2.style.color = navColor3.style.color = navColor4.style.color = '';
-    } else if ( scroll >= anch1 && scroll <= anch2 ) {
+    } else if ( scroll <= anch2 ) {
 		navColor2.style.color = '#6B5B95';
 		navColor1.style.color = navColor3.style.color = navColor4.style.color = '';
-    } else if ( scroll >= anch2 && scroll <= anch3 ) {
-
+    } else if ( scroll <= anch3 ) {
 		navColor3.style.color = '#0074D9';
 		navColor1.style.color = navColor2.style.color = navColor4.style.color = '';
 	} else {
