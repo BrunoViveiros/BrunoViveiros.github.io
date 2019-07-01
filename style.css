@@ -24,6 +24,12 @@ section {
   border-bottom: 2px solid orangered;
 }
 
+.anchor{
+  display: block;
+  visibility: hidden;
+  height: 10px;
+}
+
 
 /*-----------------------------------------------/
 /---------------------NAVBAR---------------------/
@@ -64,15 +70,15 @@ section {
   color: #FF851B;
 }
 
-#nav-skills:hover i {
+#nav-skills:hover i, .skills {
   color: #6B5B95;
 }
 
-#nav-projects:hover i{
+#nav-projects:hover i, .projects{
   color: #0074D9;
 }
 
-#nav-contact:hover i{
+#nav-contact:hover i, .contact{
   color: #01FF70;
 }
 /*----Cor base dos icones----*/
@@ -119,33 +125,41 @@ section {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 0px;
-  margin: 0px;
   width: 100%;
   background: #111;
-  /*
-  background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.7), rgba(255, 81, 0, 0.6)), url(https://media.giphy.com/media/xWMPYx55WNhX136T0V/source.gif);
-  background-size: cover;
-  background-position: center;
-  */
 }
 
-.grande {
-  font-size: 4.5rem;
+#welcome-section h1 {
+  font-size: 2.5rem;
+}
+
+#welcome-section h2 {
+  font-size: 1.5rem;
+}
+
+#welcome-section div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+#welcome-section div a {
+  margin: 40px 0 0 50px;
+  text-decoration: none;
   color: white;
 }
 
-.pequeno {
-  font-size: 2rem;
-  color: orangered;
+#welcome-section div a i {
+  font-size: 24px;
+  margin-right: 5px;
 }
 
-.anchor{
-  display: block;
-  height: 64px; /*same height as header*/
-  margin-top: -64px; /*same height as header*/
-  visibility: hidden;
-}
+/*---------------------------------------------/
+/---------------Projects Section---------------/
+/---------------------------------------------*/
+
 
 .h1-header {
   color: white;
