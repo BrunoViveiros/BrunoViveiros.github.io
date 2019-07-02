@@ -145,15 +145,45 @@ section {
   width: 100%;
 }
 
+#welcome-section div a i {
+  font-size: 24px;
+  margin-right: 5px;
+}
+
 #welcome-section div a {
   margin: 40px 0 0 50px;
+  position: relative;
   text-decoration: none;
   color: white;
 }
 
-#welcome-section div a i {
-  font-size: 24px;
-  margin-right: 5px;
+#welcome-section div a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -6px;
+  left: 0;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out 0s;
+}
+
+#welcome-btn-skills:before {
+  background-color: #6B5B95;
+}
+
+#welcome-btn-projects:before {
+  background-color: #0074D9;
+}
+
+#welcome-btn-contact:before {
+  background-color: #01FF70;
+}
+
+#welcome-section div a:hover:before{
+  visibility: visible;
+  transform: scaleX(1);
 }
 
 /*---------------------------------------------/
@@ -377,3 +407,10 @@ section {
     width: 90%;
   }
 }
+
+
+
+
+
+
+
