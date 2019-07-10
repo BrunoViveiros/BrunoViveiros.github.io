@@ -1,9 +1,26 @@
+let i = 0;
+let z = 0;
+
+window.onload = function escreveTexto() {
+	let txt = 'Olá mundo, meu nome é Bruno Fernandes'; /* The text */
+	let txt2 = 'um desenvolvedor Front-End com um gostinho por Back-end.';
+	if (i < txt.length) {
+		document.getElementById("welcome-section-txt").innerHTML += txt.charAt(i);
+		i++;
+		setTimeout(escreveTexto, 50);
+	} else if (i >= txt.length && z < txt2.length ) {
+		document.getElementById("welcome-section-txt2").innerHTML += txt2.charAt(z);
+		z++;
+		setTimeout(escreveTexto, 50);
+	}
+}
+
 window.onscroll = function () { 
 	let items = document.getElementById('navbar').children.length
 	let anch1 = document.getElementById('skills-anchor').offsetTop;
 	let anch2 = document.getElementById('projects-anchor').offsetTop;
-    let anch3 = document.getElementById('contact-anchor').offsetTop;
-    let scroll = window.innerHeight/2 + window.pageYOffset;
+	let anch3 = document.getElementById('contact-anchor').offsetTop;
+  let scroll = window.innerHeight/2 + window.pageYOffset;
 	
 	//Faz navbar aparecer após section home e desaparecer antes
 	for (let i = 0; i < items; i++) {
