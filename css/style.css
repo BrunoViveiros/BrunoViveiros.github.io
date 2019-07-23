@@ -1,17 +1,6 @@
-@import url('https://fonts.googleapis.com/css?family=Lato:400,700&display=swap');
-/*
-font-family: 'Lato', sans-serif;
-*/
-
-* {
-  margin: 0px;
-  padding: 0px;
-  font-family: 'Lato', sans-serif;
-}
-
 html, body {
   color: white;
-  background: #111;
+  background: #222;
   overflow-x: hidden;
   scroll-behavior: smooth;
 }
@@ -126,7 +115,7 @@ section {
   justify-content: center;
   align-items: center;
   width: 100%;
-  background: #111 url(assets/background.jpg) center no-repeat fixed;
+  background: #111 url(../assets/background.jpg) center no-repeat fixed;
   background-size: cover;
 }
 
