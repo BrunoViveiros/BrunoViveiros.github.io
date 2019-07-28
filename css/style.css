@@ -59,11 +59,11 @@ section {
   color: #FF851B;
 }
 
-#nav-skills:hover i, .skills {
+#nav-projects:hover i, .projects {
   color: #6B5B95;
 }
 
-#nav-projects:hover i, .projects{
+#nav-skills:hover i, .skills {
   color: #0074D9;
 }
 
@@ -77,11 +77,11 @@ section {
   top: calc(50% - 90px);
 }
 
-#nav-skills {
+#nav-projects {
   top: calc(50% - 30px);
 }
 
-#nav-projects {
+#nav-skills {
   top: calc(50% + 30px);
 }
 

@@ -17,8 +17,8 @@ window.onload = function escreveTexto() {
 
 window.onscroll = function () { 
 	let items = document.getElementById('navbar').children.length
-	let anch1 = document.getElementById('skills-anchor').offsetTop;
-	let anch2 = document.getElementById('projects-anchor').offsetTop;
+	let anch1 = document.getElementById('projects-anchor').offsetTop;
+	let anch2 = document.getElementById('skills-anchor').offsetTop;
 	let anch3 = document.getElementById('contact-anchor').offsetTop;
   let scroll = window.innerHeight/2 + window.pageYOffset;
 	
@@ -33,8 +33,8 @@ window.onscroll = function () {
 
 	//Muda cor do icone se estiver na section correspondente
 	let navColor1 = document.getElementById('nav-home').children[0];
-	let navColor2 = document.getElementById('nav-skills').children[0];
-	let navColor3 = document.getElementById('nav-projects').children[0];
+	let navColor2 = document.getElementById('nav-projects').children[0];
+	let navColor3 = document.getElementById('nav-skills').children[0];
 	let navColor4 = document.getElementById('nav-contact').children[0];
 	
 	if ( scroll <= anch1 ) {
