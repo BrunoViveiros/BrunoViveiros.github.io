@@ -249,8 +249,7 @@ section {
   padding: 0;
 }
 
-#projects-container .project-tile div {
-  display: block;
+#projects-container .project-tile > div {
   position: absolute;
   height: 250px;
   width: 500px;
@@ -264,8 +263,25 @@ section {
   transition: all 200ms ease-in;
 }
 
+#projects-container .project-tile > div a {
+  color: #DD4500;
+}
+
+#projects-container .project-tile > div span {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  width: 60%;
+  height: 60px;
+}
+
+#projects-container .project-tile > div span i {
+  text-decoration: underline;
+}
+
 #projects-container .project-tile:hover div {
-  opacity: 0.5;
+  opacity: 1;
+  background-color: rgba(0, 0, 0, 0.9);
   z-index: 2;
 }
 
