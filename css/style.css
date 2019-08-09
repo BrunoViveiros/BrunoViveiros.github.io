@@ -163,11 +163,11 @@ section {
   transition: all 0.3s ease-in-out 0s;
 }
 
-#welcome-btn-skills:before {
+#welcome-btn-projects:before {
   background-color: #6B5B95;
 }
 
-#welcome-btn-projects:before {
+#welcome-btn-skills:before {
   background-color: #0074D9;
 }
 
@@ -179,6 +179,96 @@ section {
   visibility: visible;
   transform: scaleX(1);
 }
+
+/*---------------------------------------------/
+/---------------Projects Section---------------/
+/---------------------------------------------*/
+
+
+.h1-header {
+  color: white;
+  font-size: 2rem;
+  text-align: center;
+  margin: 10px 0;
+}
+
+#projects-container {
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-flow: row wrap;
+  padding-top: 50px;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom:1px solid orangered;
+}
+
+#projects-container .project-tile {
+  width: 500px;
+  height: 250px;
+  margin: 15px;
+  position: relative;
+  text-align: center;
+  border: 3px solid orangered;
+  transition: all .2s ease-in-out;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+#projects-container .project-tile h1 {
+  display: block;
+  position: absolute;
+  top: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+#projects-container .project-tile span {
+  display: block;
+  position: absolute;
+  bottom: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+#projects-container .project-tile img {
+  display: block;
+  margin: 0;
+  padding: 0;
+  transform: scale(0.6);
+  transition: all 200ms ease-in;
+}
+
+#projects-container .project-tile:hover img {
+  transform: scale(1);
+  margin: 0;
+  padding: 0;
+}
+
+#projects-container .project-tile div {
+  display: block;
+  position: absolute;
+  height: 250px;
+  width: 500px;
+  background-color: black;
+  bottom: 0px;
+  left: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: all 200ms ease-in;
+}
+
+#projects-container .project-tile:hover div {
+  opacity: 0.5;
+  z-index: 2;
+}
+
 /*---------------------------------------------/
 /----------------Skills Section----------------/
 /---------------------------------------------*/
@@ -204,66 +294,6 @@ section {
   grid-area: title;
 }
 
-/*---------------------------------------------/
-/---------------Projects Section---------------/
-/---------------------------------------------*/
-
-
-.h1-header {
-  color: white;
-  font-size: 2rem;
-  text-align: center;
-  margin: 10px 0;
-}
-
-#projects-container {
-  width: 100%;
-  height: calc(100vh - 2rem - 20px);
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-evenly;
-  align-items: center;
-  align-content: space-evenly;
-}
-
-#projects-container .project-tile {
-  width: 300px;
-  height: 300px;
-  margin: 0 15px;;
-  position: relative;
-  text-align: center;
-  border: 3px solid orangered;
-  transition: all .2s ease-in-out;
-}
-
-#projects-container .project-tile img {
-  object-fit: cover;
-  width: 300px;
-  height: 300px; 
-  position: relative;
-  display: block;
-  transition: all .2s ease-in-out;
-}
-
-.texto {
-  font-size: 1.5rem;
-  top: 0; 
-  left: 0; 
-  position: absolute;
-  width: 100%;
-  color: white;
-  opacity: 0;
-  margin: calc(50% - 1.5rem) 0;
-  transition: opacity .2s ease-in-out;
-}
-
-#projects-container .project-tile:hover img  {
-  filter: blur(3px) brightness(.3);
-}
-
-#projects-container .project-tile:hover h2  {
-  opacity: 1;
-}
 
 #contact {
   height: calc(100vh - 75px);
