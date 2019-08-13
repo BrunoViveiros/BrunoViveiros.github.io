@@ -1,0 +1,82 @@
+.navbar-nav > .link {
+  position: fixed;
+  text-decoration: none;
+  color: white;
+  right: -200px;
+  z-index: 99;
+  height: 36px;
+  display: grid;
+  grid-template-columns: 40px 100px;
+  transition: all .6s ease-in-out;
+}
+
+.navbar-nav .icon {
+  display: block;
+  font-size: 36px;
+  height: 36px;
+  color: #555;
+  transition: color .6s ease-in-out;
+}
+
+.navbar-nav .text {
+  text-align: left;
+  line-height: 36px;
+  margin-left: 50px;
+  font-weight: bold;
+  transition: all .6s ease-in-out;
+}
+
+/*++++Posicionamento icones no meio da tela++++*/
+.navbar-nav .link.-home {
+  top: calc(50% - 90px);
+}
+
+.navbar-nav .link.-projects {
+  top: calc(50% - 30px);
+}
+
+.navbar-nav .link.-skills {
+  top: calc(50% + 30px);
+}
+
+.navbar-nav .link.-contact {
+  top: calc(50% + 90px);
+}
+/*----Posicionamento icones no meio da tela----*/
+
+/*++++Cor base dos icones++++*/
+.navbar-nav .link.-home:hover .icon {
+  color: var(--home-color);
+}
+
+.navbar-nav .link.-projects:hover .icon {
+  color: var(--projects-color);
+}
+
+.navbar-nav .link.-skills:hover .icon {
+  color: var(--skills-color);
+}
+
+.navbar-nav .link.-contact:hover .icon {
+  color: var(--contact-color);
+}
+/*----Cor base dos icones----*/
+
+
+/*++++Efeito de minimizar texto++++*/
+.navbar-nav .link.-home:hover,
+.navbar-nav .link.-skills:hover {
+  transform: translate(-40%);
+}
+
+.navbar-nav .link.-projects:hover,
+.navbar-nav .link.-contact:hover {
+  transform: translate(-50%);
+}
+
+.navbar-nav .link:hover .text {
+  margin-left: 10px;
+}
+/*----Efeito de minimizar texto----*/
+
+

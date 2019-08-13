@@ -9,37 +9,40 @@
   <title>Bruno Fernandes</title>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
   <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/base.css">
+  <link rel="stylesheet" href="./css/navbar-nav.css">
+  <link rel="stylesheet" href="./css/welcome-section.css">
   <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
 
-  <nav id="navbar">
-    <a href="#welcome-section" id="nav-home">
-      <i class="fas fa-home"></i>
-      <span>HOME</span>
+  <nav id="navbar" class="navbar-nav">
+    <a href="#welcome-section" id="nav-home" class="link -home">
+      <i class="fas fa-home icon"></i>
+      <span class="text">HOME</span>
     </a>
-    <a href="#projects-anchor" id="nav-projects">
-      <i class="fas fa-laptop"></i>
-      <span>PROJETOS</span>
+    <a href="#projects-anchor" id="nav-projects" class="link -projects">
+      <i class="fas fa-laptop icon"></i>
+      <span class="text">PROJETOS</span>
     </a>
-    <a href="#skills-anchor" id="nav-skills">
-      <i class="far fa-list-alt"></i>
-      <span>SKILLS</span>
+    <a href="#skills-anchor" id="nav-skills" class="link -skills">
+      <i class="far fa-list-alt icon"></i>
+      <span class="text">SKILLS</span>
     </a>
-    <a href="#contact-anchor" id="nav-contact">
-      <i class="far fa-address-card"></i>
-      <span>CONTATO</span>
+    <a href="#contact-anchor" id="nav-contact" class="link -contact">
+      <i class="far fa-address-card icon"></i>
+      <span class="text">CONTATO</span>
     </a>
   </nav>
 
-  <section id="welcome-section">
-    <h1 id="welcome-section-txt"></h1>
-    <h2 id="welcome-section-txt2"></h2>
-    <div>
-      <a href="#projects-anchor" id="welcome-btn-projects"><i class="fas fa-laptop projects"></i><span>PROJETOS</span></a>
-      <a href="#skills-anchor" id="welcome-btn-skills"><i class="far fa-list-alt skills"></i><span>SKILLS</span></a>
-      <a href="#contact-anchor" id="welcome-btn-contact"><i class="far fa-address-card contact"></i><span>CONTATO</span></a>
+  <section id="welcome-section" class="welcome-section">
+    <h1 id="welcome-section-txt" class="header"></h1>
+    <h2 id="welcome-section-txt2" class="header2"></h2>
+    <div class="container">
+      <a href="#projects-anchor" class="link -projects"><i class="fas fa-laptop icon"></i><span>PROJETOS</span></a>
+      <a href="#skills-anchor" class="link -skills"><i class="far fa-list-alt icon"></i><span>SKILLS</span></a>
+      <a href="#contact-anchor" class="link -contact"><i class="far fa-address-card icon"></i><span>CONTATO</span></a>
     </div>
   </section>
 

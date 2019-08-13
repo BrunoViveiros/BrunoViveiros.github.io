@@ -1,0 +1,25 @@
+:root {
+    --home-color: #FF851B;
+    --projects-color: #6B5B95;
+    --skills-color: #0074D9;
+    --contact-color: #01FF70;
+}
+
+html, body {
+  color: white;
+  background: #222;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+
+
+.orage-border {
+  border-bottom: 2px solid orangered;
+}
+
+.anchor{
+  display: block;
+  visibility: hidden;
+  height: 10px;
+}

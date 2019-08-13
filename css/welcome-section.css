@@ -1,0 +1,84 @@
+.welcome-section {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background: #111 url(../assets/background.jpg) center no-repeat fixed;
+  background-size: cover;
+}
+
+.welcome-section .header {
+  color: #FF851B;
+  font-size: 3.5rem;
+  font-weight: bold;
+}
+
+.welcome-section .header2 {
+  font-size: 1.8rem;
+  font-weight: normal;
+}
+
+.welcome-section .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.welcome-section .link {
+  font-size: 1.2rem;
+  margin: 40px 0 0 50px;
+  position: relative;
+  text-decoration: none;
+  color: white;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.welcome-section .link:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -6px;
+  left: 0;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.welcome-section .link:hover:before{
+  visibility: visible;
+  transform: scaleX(1);
+}
+
+.welcome-section .link.-projects:hover {
+  color: var(--projects-color);
+}
+
+.welcome-section .link.-projects:before {
+  background-color: var(--projects-color);
+}
+
+.welcome-section .link.-skills:hover  {
+  color: var(--skills-color);
+}
+
+.welcome-section .link.-skills:before {
+  background-color: var(--skills-color);
+}
+
+.welcome-section .link.-contact:hover  {
+  color: var(--contact-color);
+}
+
+.welcome-section .link.-contact:before {
+  background-color: var(--contact-color);
+}
+
+.welcome-section .icon {
+  font-size: 1.2rem;
+  margin-right: 5px;
+}
