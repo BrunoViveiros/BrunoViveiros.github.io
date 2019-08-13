@@ -68,8 +68,8 @@
 
 #projects-container .project-tile > div {
   position: absolute;
-  height: 250px;
-  width: 500px;
+  height: 100%;
+  width: 100%;
   background-color: black;
   bottom: 0px;
   left: 0px;
@@ -252,5 +252,3 @@
     width: 90%;
   }
 }
-
-
